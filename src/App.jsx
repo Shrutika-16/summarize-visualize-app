@@ -21,7 +21,7 @@ function App() {
       const res = await fetch('https://api-inference.huggingface.co/models/facebook/bart-large-cnn', {
         method: 'POST',
         headers: {
-          Authorization: `Bearer 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`,
+          Authorization: `Bearer hugging_face_token`,
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({ inputs: text }),
@@ -34,7 +34,7 @@ function App() {
       const imgRes = await fetch('https://api-inference.huggingface.co/models/stabilityai/stable-diffusion-xl-base-1.0', {
         method: 'POST',
         headers: {
-          Authorization: `Bearer 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`,
+          Authorization: `Bearer hugging_face_token`,
           'Content-Type': 'application/json',
           Accept: 'image/png',
         },
